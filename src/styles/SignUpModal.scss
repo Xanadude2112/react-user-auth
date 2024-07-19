@@ -1,0 +1,79 @@
+.modal, .overlay{
+  height: 100%;
+  width:  100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay{
+  background-color: #00000080; 
+}
+
+.close-modal{
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 10%;
+}
+
+.user-interact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  border: solid 5px #8000d0;
+  background-color: #151313;
+  width: 30%;
+}
+
+.sign-in{
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+
+.inputs-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  input{
+    margin: 5% 0;
+    padding: 5%;
+    border-radius: 15px;
+    border: solid 5px #8000d0;
+  }
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.buttons button{
+  padding: 8px;
+  background-color: #8000d0;
+  border-radius: 15px;
+  border: solid 2px #ffffff;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+
+.buttons button:hover{
+  padding: 8px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: solid 2px #8000d0;
+  font-family: "Open Sans", sans-serif;
+  color: #8000d0;
+}

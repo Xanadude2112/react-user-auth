@@ -1,21 +1,34 @@
 import { useState } from "react";
-import "./styles/App.scss";
+import "../styles/App.scss";
+import SignUpModal from "./SignUpModal";
+import Navbar from "./Navbar";
 
 function App() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const modalToggler = () => {
+    setModalOpen((prev) => !prev);
+  };
+
   return (
     <div className="master">
-      <div className="user-interact">
-        <h2 className="sign-in">Sign In</h2>
-        <div>
-          <input type="text" name="" className="" placeholder="Name" />
-          <input type="text" name="" className="" placeholder="Email" />
-          <input type="text" name="" className="" placeholder="Password" />
-        </div>
-        <div className="buttons">
-        <button>Login</button>
-        <a href=""></a>
-        </div>
-      </div>
+      <Navbar modalToggler={modalToggler} />
+      {modalOpen === true ? (
+        <SignUpModal
+          modalToggler={modalToggler}
+          name={name}
+          setName={setName}
+          email={email}
+          setEmail={setEmail}
+          password={password}
+          setPassword={setPassword}
+        />
+      ) : (
+        <p className="test-text">SO MUCH EMPTY :3</p>
+      )}
     </div>
   );
 }

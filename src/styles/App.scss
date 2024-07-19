@@ -6,7 +6,13 @@ body {
 .master {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 25%;
+  margin-top: 15%;
+}
+
+.test-text{
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
 }

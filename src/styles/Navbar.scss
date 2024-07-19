@@ -1,0 +1,30 @@
+.nav{
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3%;
+  background-color: #8000d0;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-button{
+  padding: 1%;
+  background-color: #8000d0;
+  color: #ffffff;
+  font-size: 1rem;
+  border: solid 5px #ffffff;
+  border-radius: 20px;
+  margin-right: 5%;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.nav-button:hover{
+  background-color: #ffffff;
+  color: #8000d0;
+  border: solid 5px #8000d0;
+}
